@@ -1,0 +1,126 @@
+*{
+}
+#header{
+  background: linear-gradient(#f2f2f2,#f5f5f5,#f6f6f6,#f8f8f8,#f9f9f9,#fafafa,#fbfbfb,#fcfcfc,#fdfdfd);
+  width:1000px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  height: 60px;
+}
+#background{
+  background-color: #6f5964;
+  width: 1000px;
+  padding:20px;
+}
+a{
+  font-family: sans-serif;
+}
+#header h1{
+  font-family: comic sans ms;
+  display: inline-block;
+}
+#header h2{
+  display: inline-block;
+  margin-left: 40%;
+  font-family: sans-serif;
+}
+#tophalf{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*ABOUT AND SELF PORTRAIT*/
+#about{
+  width:  495px;
+  height: 290px;
+  background-color: #ece4eb;
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 15px;
+}
+#about h3{
+  background: linear-gradient(#a8a7ad,#8e8c98,#878693,#a1a1a8);
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 0%;
+  font-family: sans-serif;
+}
+#about p{
+  width: 420px;
+  font-family:sans-serif;
+  padding-left: 10px;
+}
+#about a{
+  margin-left: 10px;
+}
+#portrait{
+  height: 100%;
+  width: 450px;
+  border: 5px #c0c0c0 solid;
+}
+#img{
+  display: inline-block;
+  width: 500px;
+}
+
+/*THREE BOXES*/
+#box1, #box2, #box3{
+  width:320px;
+  background-color: #ece4eb;
+  font-family: sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+#box1, #box2{
+  margin-right: 15px;
+}
+#box1 #lamode, #box2 #famcon, #box3 #fiveeleven{
+  width: 100%;
+}
+
+#box1 h3, #box2 h3, #box3 h3{
+  background: linear-gradient(#a8a7ad,#8e8c98,#878693,#a1a1a8);
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 0%;
+}
+#box1 p, #box2 p, #box3 p{
+  padding-left: 10px;
+}
+.tech{
+  width:40px;
+  padding-left:10px;
+}
+#box1 button, #box2 button, #box3 button{
+  background-color: #407d61;
+  border-radius: 10px;
+  font-family: sans-serif;
+  color: white;
+}
+.center{
+  margin:auto;
+  text-align: center;
+}
+
+/*BOTTOM*/
+#bottom{
+  background: linear-gradient(#fdfdfd,#fcfcfc,#fbfbfb,#fafafa,#f9f9f9,#f8f8f8,#f6f6f6,#f5f5f5,#f2f2f2);
+  width: 1000px;
+  height:60px;
+  padding: 3px 40px 5px 0px;
+  text-align: center;
+}
+#bottom img{
+  width: 15px;
+}
+#bottom p{
+  font-family: sans-serif;
+}
+#bottom a{
+  font-style: italic;
+  font-family: sans-serif;
+}
+.technologies h3{
+  padding: 5px;
+}

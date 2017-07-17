@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Game of Thrones</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Alegreya+Sans+SC|Bellefair');
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("img").click(function(){
+          var house = $(this).attr("class");
+          $.get("https://www.anapioficeandfire.com/api/houses/"+house, function(stats){
+            console.log(stats);
+            var region = stats.region;
+            var name = stats.name;
+            var words = stats.words;
+            var titles = "";
+
+            for(var i = 0; i < stats.titles.length-1; i++){
+                titles += stats.titles[i] + ", ";
+            }
+            for(var y = stats.titles.length-1; y<stats.titles.length;y++){
+              titles += stats.titles[y];
+            }
+            var html_str = `<h2>House Details</h2>
+                            <p><b>Name:</b> ${name}</p>
+                            <p><b>Region:</b> ${region}</p>
+                            <br>
+                            <p><b>Words:</b> ${words}</p>
+                            <p><b>Titles:</b> ${titles}</p>`
+            $("#details").html(html_str);
+          }, 'json')
+        })
+      })
+    </script>
+    <style type="text/css">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      body{
+        width: 1000px;
+        margin-left: 200px;
+        font-family: 'Alegreya SC', serif;
+        background-image: url(https://images.alphacoders.com/220/thumb-1920-220983.jpg);
+        margin-top: 60px;
+      }
+      img{
+        width: 200px;
+        border: 1px solid black;
+        height: 114.5px;
+      }
+      h1, .intro{
+        margin: auto;
+        text-align: center;
+      }
+      #imgs{
+        margin-top: 10px;
+        text-align: center;
+      }
+      #details{
+        text-align: center;
+        margin: auto;
+        width: 500px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Game of Thrones</h1>
+    <div id="imgs">
+      <img class = "362" src="stark.jpg" alt="Stark">
+      <img class = "378" src="targaryen.jpg" alt="Targaryen">
+      <img class = "230" src="lannister.jpg" alt="Lannister">
+      <img class = "15" src="baratheon.png" alt="Baratheon">
+    </div>
+    <div id="details">
+      <h2>House Details</h2>
+      <p class="intro">Click on a house above to see their information</p>
+    </div>
+  </body>
+</html>

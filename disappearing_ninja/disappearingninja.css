@@ -1,0 +1,21 @@
+/*GENERAL*/
+*{
+
+}
+
+/*BODY*/
+h1{
+  margin: auto;
+  text-align: center;
+}
+
+img{
+  width:100px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+button{
+  margin-left: 430px;
+  text-align: center;
+}

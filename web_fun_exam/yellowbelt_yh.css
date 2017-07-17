@@ -1,0 +1,192 @@
+/*GENERAL/CSS RESETS*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+a{
+   color:inherit;
+   text-decoration: none;
+}
+
+#content{
+  width:1010px;
+  background-color: black;
+  margin-left: 200px;
+}
+
+
+/*HEADER*/
+#header{
+  display: flex;
+  background-color: #1a1a1a;
+  width: 960px;
+  margin-left: 2%;
+  padding: 20px 5px 30px 5px;
+  font-family: sans-serif;
+}
+#header p{
+  color:#c9cccd;
+  margin-left: 55%;
+}
+
+/*NAV*/
+#nav ul{
+  list-style-type: none;
+  background: linear-gradient(#525252,#494949,#3c3c3c,#2c2c2c,#1f1f1f);
+  display: flex;
+  width:96%;
+  margin-left: 2%;
+  box-shadow: 10px;
+}
+#nav ul li{
+  color:#a2a1a0;
+  padding: 10px 10px 10px 10px;
+  font-family: sans-serif;
+  font-size: 10pt;
+}
+#nav ul li .line{
+  width:2px;
+  background: linear-gradient(#3b3b3b,#3d3d3d,#464646,#4e4e4e,#4f4f4f);
+  height:100%;
+  float:right;
+  margin-left: 20px;
+}
+.small{
+  font-size: 7pt;
+}
+#nav ul li .lastline{
+  margin-left: 400px;
+}
+#nav ul li.home{
+  color:#d7d6d1;
+}
+/*CONTENT*/
+#mainpic{
+  width:970px;
+  margin-left:2%;
+  border-bottom: 6px solid #3b3b3b;
+}
+
+
+/*INFO BOXES*/
+#infoboxes{
+  background-color: #1a1a1a;
+  display: flex;
+  padding: 30px 0px 30px 0px;
+  margin-left: 2%;
+  margin-top: -5px;
+  width:970px;
+  font-family: 'Merriweather', serif;
+}
+#infoboxes img{
+  width:70px;
+  height:37px;
+}
+#infoboxes p .boxtitle{
+  font-size: 10pt;
+  color:#d78541;
+}
+#infoboxes p{
+  font-size: 7pt;
+  color:#cacdcc;
+  padding-top: 5px;
+}
+#b1{
+  margin-left: 5px;
+}
+#b1,#b2,#b3,#b4{
+  display: flex;
+  margin-right: 20px;
+}
+
+/*BIBENDUM SECTION*/
+#bibendum{
+  background: repeating-linear-gradient(
+  -55deg,
+  #050505,
+  #050505 5px,
+  #141414 5px,
+  #141414 7px);
+  margin-left: 2%;
+  width:940px;
+  display: flex;
+  padding: 30px 20px 30px 10px;
+  font-family: 'PT Sans', sans-serif;
+}
+#bibendum p{
+  color: #acb1b1;
+  font-size: 10pt;
+  padding-top: 10px;
+}
+.bibtitle{
+  font-size: 15pt;
+  color: white;
+}
+#bibtext{
+  padding-right: 10px;
+}
+#bibendum button{
+  width: 210px;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  background: linear-gradient(#edb98f,#e4985c,#e29253,#e18a49,#e08744,#d7803f);
+  color:#fef9f1;
+  font-size: 15pt;
+  border-radius: 10px;
+  margin-left: 30px;
+  border: none;
+}
+
+
+/*PORTFOLIO*/
+#portfolio{
+  background-color: #1a1a1a;
+  width:970px;
+  margin-left: 2%;
+  font-family: 'Merriweather', serif;
+}
+#portfolio ul{
+  list-style-type: none;
+}
+.entireportfoliotitle{
+  display:flex;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.pftitle{
+  color: white;
+  font-size: 10pt;
+  padding-right: 750px;
+}
+.view{
+  color: #dd8742;
+  font-size: 6pt;
+  font-style: italic;
+}
+
+#pfboxes{
+  width: 200px;
+  display: flex;
+  padding: 10px 30px 10px 10px;
+}
+#pfboxes img{
+  width:200px;
+  border: 5px solid #363636;
+}
+.pfbtitle{
+  font-size: 10pt;
+  color: #d88040;
+}
+#pfboxes li{
+  color:white;
+  font-size: 8pt;
+  padding-top: 20px;
+}
+#pfb1,#pfb2,#pfb3,#pfb4{
+  margin-right: 35px;
+}
+.footer{
+  font-size: 7pt;
+  color:#747677;
+  margin-left: 900px;
+}

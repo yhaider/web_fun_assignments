@@ -1,0 +1,25 @@
+/*GENERAL*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*TABLES*/
+#wrapper{
+  border: 3px solid black;
+  margin: 10px 20px 10px 20px;
+  width:375px;
+}
+table th{
+  border: 3px solid black;
+  margin: 10px 20px 10px 20px;
+  width:375px;
+}
+h1, form{
+  margin: 10px 20px 10px 20px;
+  width:500px;
+  
+}
+input{
+  margin-right:400px;
+}

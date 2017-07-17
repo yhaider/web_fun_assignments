@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Weather App</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('form :submit').click(function() {
+        $(".loader").show();
+        var city = $("#city").val()
+        $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&&appid=d18b2d9e5df1f3331c7209a0f93c3713', function(weather) {
+            console.log(weather);
+            var temp = weather.main.temp;
+            var max = weather.main.temp_max;
+            var min = weather.main.temp_min;
+            var windsp = weather.wind.speed;
+            $("#name").html(weather.name);
+            // $("#info").html('<p>Temperature: ' + temp + '°F</p><p>High: ' + max + '°F</p><p>Low: ' + min + '°F</p><p>Wind Speeds: ' + windsp + 'mph</p>');
+            //I wanted to implement interpolation on my own, so I commented out my original code
+            $("#info").html(`<p>Temperature: ${temp} °F</p>
+                              <p>High: ${max} °F</p>
+                              <p>Low: ${min} °F</p>
+                              <p>Wind Speeds: ${windsp} mph</p>`);
+        $(".loader").hide();
+        }, 'json');
+        return false;
+  });
+});
+    </script>
+    <style type="text/css">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      body{
+        margin:auto;
+        text-align: center;
+        margin-top: 200px;
+        padding-top: 20px;
+        width: 800px;
+        border: 1px solid black;
+      }
+      #temperature{
+        margin: 20px;
+        text-align: center;
+      }
+      @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+      }
+      .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #9742ff;
+    /*border-right: 10px solid #b070ff;*/
+    border-bottom: 10px solid #caa0ff;
+    /*border-left: 10px solid #e2ccff;*/
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin:auto;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h2>Search the weather</h2>
+    <p>Type in a city to see what the temperature is!</p>
+    <form>
+      <input type="text" id="city">
+      <input type="submit">
+    </form>
+    <div class="loader"></div>
+    <div id = "temperature">
+      <p><b id="name"></b></p>
+      <div id="info"></div>
+    </div>
+  </body>
+</html>

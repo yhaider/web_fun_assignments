@@ -1,0 +1,202 @@
+/*CSS RESETS AND OVERARCHING STUFF*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Muli', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli');
+#all{
+  background: linear-gradient(#e7e7e7,white,white,white,white,white,white,white,white);
+  display: flex;
+  width:1000px;
+}
+
+
+/*HEADER EDITS*/
+header{
+  width:1000px;
+}
+header img{
+  width:100px;
+  position: absolute;
+}
+header h1{
+  margin-left: 10%;
+  padding: 30px 0px 0px 0px;
+}
+header h1 .dblue{
+  color:#366499;
+}
+header h2{
+  color: white;
+  background: linear-gradient(#3d6a9c,#4e77a3,#557ca6,#4e77a3,#3d6a9c);
+  padding: 30px 20px 20px 20px;
+  font-size: 20pt;
+}
+
+
+/*SIDEBAR*/
+#sidebar{
+  width:200px;
+  padding: 10px 0px 10px 10px;
+}
+.sidetext{
+  margin-left: 10px;
+  padding: 10px 0px 10px 0px;
+}
+#an{
+  font-size: 10pt;
+}
+#so{
+  font-size: 12pt;
+  padding-top: -10px;
+}
+.Red{
+  color:#c8382b;
+}
+#sidebar button{
+  color:white;
+  background: linear-gradient(#81cbdd,#61c4db,#55bfdb);
+  border: none;
+  padding: 10px 40px 10px 40px;
+  margin-bottom: 20px;
+  border-radius: 7pt;
+  font-size: 10pt;
+}
+.g1{
+  color: #9adbe9;
+}
+.g2{
+  color: #ccedf5;
+}
+.g3{
+  color:#fbfefe;
+}
+.blue{
+  color:#376599;
+}
+
+#adv{
+  background-image:url("ad_background.png");
+  width: 200px;
+  text-align: center;
+  margin: auto;
+}
+#watch, #mr{
+  width: 200px;
+  height:35px;
+  box-shadow: 2px 2px 2px #888888;
+  border-radius: 7pt;
+}
+#mr{
+  margin-bottom: 30px;
+}
+#topsb{
+  border-bottom: 2px solid #a5a5a5;
+}
+#bottomsb{
+  margin-top: 30px;
+}
+#ninja{
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+#adv p{
+  color: white;
+  padding: 20px 5px 20px 5px;
+  font-size: 17pt;
+}
+
+
+/*CONTENT*/
+#content{
+  margin-left: 30px;
+  width: 800px;
+}
+#contact{
+  list-style-type: none;
+}
+#cs{
+  padding-left: 50px;
+  font-size: 10pt;
+}
+#sizing{
+  font-size: 15pt;
+}
+.lblue{
+  color:#3f95ab;
+}
+#content p{
+  font-size: 10pt;
+}
+#reqres{
+  width:300px;
+  margin: auto;
+  padding: 10px 180px 10px 180px;
+}
+.other{
+  font-size: 7pt;
+  color:#5a5a5a;
+}
+#number{
+  font-size: 15pt;
+  color: #51bddb;
+}
+ol{
+  padding-left: 50px;
+  padding-bottom:20px;
+  font-size: 10pt;
+}
+p.dns{
+  color:#3c699c;
+  font-size: 15pt;
+}
+#phone{
+  width:auto;
+  height:40px;
+}
+#home{
+  width:auto;
+  height:15px;
+}
+#allci{
+  display:flex;
+  margin-left: 70%;
+}
+#dnscontact{
+  display:flex;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-bottom: 2px solid #a5a5a5;
+}
+#homedns{
+  display:flex;
+  vertical-align: bottom;
+}
+h3{
+  padding: 10px 0px 10px 0px;
+}
+
+/*BIG THREE*/
+#bigthree{
+  width: 700px;
+  padding: 30px 10px 10px 10px;
+  display:flex;
+  border-top: 5px solid #3583d9;
+  border-left: 5px solid #3583d9;
+  border-right: 5px solid #3583d9;
+}
+#bigthree img{
+  width:auto;
+  height:100px;
+  display: inline-block;
+  margin: 0px 10px 10px 0px;
+}
+#bigthree p{
+  font-size: 10pt;
+}
+#bigthree h3{
+  color:#3d699c;
+}

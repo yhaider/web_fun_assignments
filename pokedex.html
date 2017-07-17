@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        for(var y = 1; y<=151; y++){
+          var source = "http://pokeapi.co/media/img/" + y + ".png"
+          $("#images").append("<img src = '" + source + "'alt='pokémon' id ='" + y + "'>");
+        }
+        $("img").click(function(){
+          var image = $(this).attr("src");
+          $.get("http://pokeapi.co/api/v1/pokemon/" + $(this).attr("id"), function(stats){
+              console.log(stats);
+              var str_details = "";
+              for (var i in stats.types){
+                // str_details = "<h4>Type(s):</h4><p>" + stats.types[i].name + "</p><h4>Height:</h4><p>" + stats.height + "</p><h4>Weight:</h4><p>" + stats.weight + "</p>";
+                str_details =`<h3> ${stats.name} </h3>
+                              <img src='${image}' alt = 'pokemon'>
+                              <h4>Type(s):</h4>
+                              <p>${stats.types[i].name}</p>
+                              <h4>Height:</h4>
+                              <p>${stats.height}</p>
+                              <h4>Weight:</h4>
+                              <p>${stats.weight}</p>`;
+              }
+              $("#pokedex").html(str_details);
+            }, "json")
+        })
+      });
+    </script>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      h1, .expl{
+        font-family: 'Gloria Hallelujah', cursive;
+        text-align: center;
+      }
+      h2, h3{
+        text-align: center;
+      }
+      h3{
+        margin-top: 20px;
+      }
+      h2, h3, h4, p {
+        margin-left: 30px;
+        font-family: 'Gloria Hallelujah', cursive;
+      }
+      img{
+        width: 100px;
+        margin: 10px 10px 10px 10px;
+      }
+      #pokedex img{
+        margin-left: 130px;
+      }
+      #images{
+        width: 700px;
+      }
+      #pokedex{
+        border: 5px solid black;
+        width: 400px;
+        height:500px;
+      }
+      #main{
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Pokedex for Pokémon [#1 to #151]</h1>
+    <p class="expl">Below you will find all the original pokémon from the very first to the one-hundred-fiftieth!</p>
+    <div id="main">
+      <div id="images">
+      </div>
+      <div id="pokedex">
+        <h2>Pokedex</h2>
+      </div>
+    </div>
+  </body>
+</html>

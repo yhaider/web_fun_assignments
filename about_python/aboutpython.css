@@ -1,0 +1,168 @@
+*{
+  font-family:sans-serif;
+}
+
+/*--MAIN BG--*/
+#mainbg{
+  width:970px;
+  background-color: #305073;
+}
+#logo{
+  vertical-align: top;
+  display: inline-block;
+}
+#logo img{
+  width: 500px;
+}
+
+#search{
+  width:200px;
+  background-color: #444444;
+  text-align: center;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 7pt;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 20%;
+  margin-top: 30px;
+}
+#search p{
+  color:white;
+}
+#search a{
+  color: #c9b02e;
+}
+#search p{
+  font-size: 9pt;
+}
+#search button{
+}
+
+
+#navbar ul{
+  list-style-type: none;
+}
+
+#navbar li{
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  font-size: 20pt;
+  font-family: inherit;
+}
+#navbar{
+  background-color: #557da9;
+  margin: 0px 50px 0px 50px;
+  border-radius: 7pt;
+  box-shadow: 2px 2px 2px black;
+}
+
+#sidebar{
+  width: 300px;
+  display: inline-block;
+}
+#sidebar a{
+  color: white;
+}
+#sidebar li{
+  margin: auto;
+  text-align: center;
+  list-style: inside;
+  padding: 5px;
+  list-style-type: none;
+}
+
+#sidebar li::before{
+  content: ">>";
+  color: #f4d355;
+}
+
+#content{
+  vertical-align: top;
+  display: inline-block;
+  width:600px;
+  text-align: center;
+  margin: auto;
+}
+#content .white p{
+  color: white;
+  font-size: 10pt;
+}
+#content #poem{
+  color: #f4d355;
+  font-style: italic;
+}
+
+
+
+
+/*WHITE BACKGROUND*/
+#whitebg{
+  width: 970px;
+}
+#infobox{
+  margin-left: 15%;
+  margin-top: 10px;
+
+}
+#gs{
+  width: 350px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right:50px;
+  text-align:center;
+  border-top: 5px #7ea6d1 solid;
+  font-size: 10pt;
+}
+#gs li{
+  color:#8cb0d6;
+  list-style-type: none;
+}
+#gs li::before{
+  content:"■   ";
+  color:black;
+}
+
+#app{
+  width: 350px;
+  display:inline-block;
+  vertical-align: top;
+  margin: auto;
+  text-align: center;
+  border-top: 5px #7ea6d1 solid;
+  font-size: 10pt;
+}
+#app li{
+  color: #8cb0d6;
+  list-style-type: none;
+}
+#app strong{
+  font-style:normal;
+  color:#92b4d8;
+}
+#app li::before{
+  content: "■   ";
+  color: black;
+}
+
+/*BOTTOM*/
+#bottom{
+  width:970px;
+  background: linear-gradient(#315378,#355981,#3d6694,#436fa1,#4472a6);
+}
+#bottom ul{
+  list-style-type: none;
+  margin-left: 15%
+}
+#bottom li{
+  display: inline-block;
+  color: #89afd8;
+  padding: 20px;
+  text-align: center;
+  margin:auto;
+}
+#bottom p{
+  color: #89afd8;
+  text-align: center;
+  font-size: 5pt;
+}

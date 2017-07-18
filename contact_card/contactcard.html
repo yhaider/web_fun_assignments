@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Cards</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(document).on("click", "form :submit", function(){
+          $("#cards").append("<div class='card'><span class='front'><h2>" + $("#first").val() + " " + $("#last").val() + "</h2><p>" + "Click to see description!" + "</p></span><p class='back'>" + $("#description").val() + "</p></div>")
+          return false;
+        })
+        $(document).on("click", ".card", function(){
+          $(this).children().toggle()
+        });
+      });
+    </script>
+
+    <style type="text/css">
+      body{
+        display: flex;
+      }
+      h1{
+        text-align: center;
+      }
+      #form{
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 241px;
+        margin-right: 20px;
+      }
+      #cards{
+        /*border: 3px solid black;*/
+        width: 500px;
+      }
+      .card{
+        width: 400px;
+        border: 1px solid grey;
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: black;
+        color:white;
+
+      }
+      .back{
+        display: none;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="form">
+      <h1>Fill out this form to add a contact card!</h1>
+      <form>
+        <label for="first">First Name:</label>
+        <input type="text" id="first">
+        <label for="last">Last Name:</label>
+        <input type="text" id="last">
+        <label for="description">Description:</label>
+        <textarea id="description"></textarea>
+        <input type="submit">
+      </form>
+    </div>
+    <div id="cards">
+      <!-- <div class="card">
+        <div class="front">
+          <h2>First Name Last Name</h2>
+          <p>Click to see description!</p>
+        </div>
+        <div class="back">
+          <p>Description</p>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>

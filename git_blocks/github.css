@@ -1,0 +1,129 @@
+/*OVERALL*/
+*{
+  margin: 0px;
+  padding:0px;
+  font-family: monospace;
+}
+
+#bg{
+  background-color:#dddfd4;
+  width:1120px;
+  padding: 10px 10px 5px 10px;
+}
+
+#menu a{
+  color:white;
+}
+ul{
+  list-style-type: none;
+}
+#gb{
+  font-size: 15pt;
+}
+img{
+  width:30px;
+  height:100%;
+  margin-left:10px;
+}
+.smhead{
+  font-size: 15pt;
+  color: #dee0d5;
+}
+.txt{
+  font-size: 10pt;
+  color:#dee0d5;
+}
+.lblue{
+  color:#75d5c7;
+}
+
+#header{
+  display:flex;
+  background-color: #5daeac;
+  width:1100px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#menu{
+  display:flex;
+}
+#menu li{
+  padding: 20px 20px 0px 10px;
+  font-size:13pt;
+}
+#logo{
+  display: flex;
+  font-size: 20pt;
+  padding-top: 13px;
+  vertical-align: middle;
+}
+#initaddstatus{
+  display:flex;
+  margin-left: 20px;
+}
+
+#yellowbg{
+  background-color: #f7e79c;
+  margin: 20px 20px 20px 20px;
+  /*display:flex;*/
+}
+.head{
+  font-size: 17pt;
+  padding-top: 20px;
+}
+#secondhead{
+  padding-top: 40px;
+}
+#what{
+  width:230px;
+  padding: 0px 20px 20px 20px;
+  background-color: #213f43;
+  color: #dee0d5;
+  margin: 20px 20px 20px 20px;
+  display: inline-block;
+  height: 510px;
+  vertical-align: top;
+}
+
+#init, #add, #status{
+  background-color: #213f43;
+  margin: 20px 20px 20px 20px;
+  width: 200px;
+  height:150px;
+}
+#init li, #add li, #status li{
+  padding: 10px 10px 10px 10px;
+}
+
+#commitremoteadd{
+  display:flex;
+  margin-left: 20px;
+
+}
+#commit, #remoteadd{
+  background-color: #213f43;
+  margin: 20px 20px 20px 20px;
+  width: 320px;
+  height:150px;
+}
+#commit li, #remoteadd li{
+  padding: 10px 10px 10px 10px;
+}
+#push{
+  background-color: #213f43;
+  margin: 20px 20px 20px 40px;
+  width: 680px;
+  height:150px;
+}
+#push li{
+  padding: 10px 10px 10px 10px;
+}
+#sideboxes{
+  display: inline-block;
+}
+#footer{
+  background-color: #5daeac;
+  padding: 20px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
+  text-align: center;
+}
